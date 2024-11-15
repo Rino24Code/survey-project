@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survey Form Test</title>
+<link rel="stylesheet" href="/Survey Form/survey-style/survey.css">
+</head>
+
+<body>
+<div class="container">
+<header class="header">
+<h1 id="title" class="title"> freeCodeCamp Survey Form </h1>
+<p id="description" class="description"> Thank you for taking the time to help us improve the platform </p>
+</header>
+</div>
+
+
+<form id="survey-form" class="survey-form">
+
+<div class="group">
+<label id="name-label" for="name">Name</label><br>
+<input type="text" name="name" id="name" class="answer" placeholder="Enter your name" required/>
+</div>
+
+<div class="group">
+<label id="email-label" for="email"> Email address</label><br>
+<input type="email" name="email" id="email" class="answer" placeholder="Enter your email" required/>
+</div>
+
+<div class="group">
+<label id="number-label" for="age"> Age (optional) </label><br>
+<input type="number" name="age" id="number" class="answer" placeholder="Age" min="10" max="120"/>
+</div>
+
+<div class="group">
+<p>Which option best describes your current role?</p>
+<select id="dropdown" class="answer" required> 
+  <option non-disabled> Select current role </option>
+  <option>Student</option>
+  <option>Full Time Job</option>
+  <option>Full Time Learner</option>
+  <option>Prefer not to say</option>
+  <option>Other</option>
+  </select>
+</div>
+
+<div class="group">
+<p>Would you recommend freeCodeCamp to a friend?</p>
+<labe>
+<input
+name="recommendation"
+value="definitely"
+type="radio"
+class="input-radio"
+checked
+/>Definitely</label>
+<br>
+<labe>
+<input
+name="recommendation"
+value="maybe"
+type="radio"
+class="input-radio"
+/>Maybe</label>
+<br>
+<labe>
+<input
+name="recommendation"
+value="not-sure"
+type="radio"
+class="input-radio"
+/>Not sure</label>
+</div>
+
+<div class="group">
+<p>What is your favorite feature of freeCodeCamp?</p>
+<select id="dropdown" class="answer" required> 
+  <option non-disabled> Select an option </option>
+  <option>Challenges</option>
+  <option>Projects</option>
+  <option>Community</option>
+  <option>Open Source</option>
+  <option>Other</option>
+  </select>
+</div>
+
+<div class="group">
+<p>What would you like to see improved?
+<span> (Check all that apply) </span> </p>
+
+<label>
+<input
+name="preference"
+value="nothing"
+type="checkbox"
+class="input-checkbox"
+/>Front-end Projects</label>
+<br>
+<label>
+<input
+name="preference"
+value="color"
+type="checkbox"
+class="input-checkbox"
+/>Back-end Projects</label>
+<br>
+<label>
+<input
+name="preference"
+value="font"
+type="checkbox"
+class="input-checkbox"
+/>Data Visualization</label>
+<br>
+<label>
+<input
+name="preference"
+value="projects"
+type="checkbox"
+class="input-checkbox"
+/>Challenges</label>
+<br>
+<label>
+<input
+name="preference"
+value="projects"
+type="checkbox"
+class="input-checkbox"
+/>Open Source Community</label>
+<br>
+<label>
+<input
+name="preference"
+value="projects"
+type="checkbox"
+class="input-checkbox"
+/>Gitter help rooms</label>
+<br>
+<label>
+<input
+name="preference"
+value="projects"
+type="checkbox"
+class="input-checkbox"
+/>Videos</label>
+<br>
+<label>
+<input
+name="preference"
+value="projects"
+type="checkbox"
+class="input-checkbox"
+/>City Meetups</label>
+<br>
+<label>
+<input
+name="preference"
+value="projects"
+type="checkbox"
+class="input-checkbox"
+/>Wiki</label>
+<br>
+<label>
+<input
+name="preference"
+value="projects"
+type="checkbox"
+class="input-checkbox"
+/>Forum</label>
+<br>
+<label>
+<input
+name="preference"
+value="projects"
+type="checkbox"
+class="input-checkbox"
+/>Additional Courses</label>
+
+</div>
+
+
+
+<div class="group">
+<p>Any comments or suggestions?</p>
+<textarea
+id="comments"
+class="input-textarea"
+name="comments"
+placeholder="Enter your comment here..."
+></textarea>
+</div>
+
+<div class="group">
+<button
+type="submit"
+id="submit"
+class="submit-button">
+Submit
+</button>
+</div>
+
+</form>
+
+</body>
+
+</html>
